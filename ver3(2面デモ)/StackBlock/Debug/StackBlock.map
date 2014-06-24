@@ -1,0 +1,645 @@
+##########################################
+# (1) LINK INFORMATION                   #
+##########################################
+c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\bin\ln30.exe @C:\WorkSpace\StackBlock\StackBlock\Debug\StackBlock.m16cl
+
+# ID CODE DATA
+.ID  "#FFFFFFFFFFFFFF"
+
+# OPTION FUNCTION SELECT REGISTER
+.OFSREG  FFH
+
+# LINK FILE INFORMATION
+ncrt0 (C:\WorkSpace\StackBlock\StackBlock\Debug\ncrt0.r30)
+	Jul 19 19:02:58 2013
+
+control_power (C:\WorkSpace\StackBlock\StackBlock\Debug\control_power.r30)
+	Jul 19 19:02:57 2013
+
+init (C:\WorkSpace\StackBlock\StackBlock\Debug\init.r30)
+	Jul 19 19:02:57 2013
+
+serial (C:\WorkSpace\StackBlock\StackBlock\Debug\serial.r30)
+	Jul 19 19:02:57 2013
+
+serial1 (C:\WorkSpace\StackBlock\StackBlock\Debug\serial1.r30)
+	Jul 19 19:02:57 2013
+
+StackBlock (C:\WorkSpace\StackBlock\StackBlock\Debug\StackBlock.r30)
+	Jul 19 19:02:57 2013
+
+timer (C:\WorkSpace\StackBlock\StackBlock\Debug\timer.r30)
+	Jul 19 19:02:57 2013
+
+init (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib)
+	Jan  6 15:31:47 2010
+
+mdata (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib)
+	Jan  6 15:31:49 2010
+
+device (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib)
+	Jan  6 15:31:39 2010
+
+
+##########################################
+# (2) SECTION INFORMATION                #
+##########################################
+# SECTION                        ATR TYPE    START  LENGTH ALIGN MODULENAME
+data_SE                          ABS DATA    000400 000000       ncrt0
+bss_SE                           REL DATA    000400 000000 2     ncrt0
+data_SO                          REL DATA    000400 000000       ncrt0
+bss_SO                           REL DATA    000400 000000       ncrt0
+data_NE                          REL DATA    000400 000000 2     ncrt0
+                                 REL DATA    000400 000002 2     control_power
+                                 REL DATA    000402 000100 2     StackBlock
+                                 REL DATA    000502 00000C 2     mdata
+bss_NE                           REL DATA    00050E 000000 2     ncrt0
+                                 REL DATA    00050E 00009A 2     serial
+                                 REL DATA    0005A8 000098 2     serial1
+                                 REL DATA    000640 0000D2 2     StackBlock
+                                 REL DATA    000712 000006 2     timer
+                                 REL DATA    000718 00003C 2     init
+                                 REL DATA    000754 000006 2     mdata
+data_NO                          REL DATA    00075A 000000       ncrt0
+                                 REL DATA    00075A 000005       StackBlock
+                                 REL DATA    00075F 000001       timer
+bss_NO                           REL DATA    000760 000000       ncrt0
+                                 REL DATA    000760 000002       StackBlock
+                                 REL DATA    000762 000004       timer
+                                 REL DATA    000766 000004       device
+istack                           REL DATA    00076A 000080 2     ncrt0
+stack                            REL DATA    0007EA 000080 2     ncrt0
+heap                             REL DATA    00086A 000080       ncrt0
+rom_NE                           ABS ROMDATA 008000 000000       ncrt0
+rom_NO                           REL ROMDATA 008000 000000       ncrt0
+                                 REL ROMDATA 008000 00000C       StackBlock
+data_SEI                         REL ROMDATA 00800C 000000 2     ncrt0
+data_SOI                         REL ROMDATA 00800C 000000       ncrt0
+data_NEI                         REL ROMDATA 00800C 000000 2     ncrt0
+                                 REL ROMDATA 00800C 000002       control_power
+                                 REL ROMDATA 00800E 000100       StackBlock
+                                 REL ROMDATA 00810E 00000C       mdata
+data_NOI                         REL ROMDATA 00811A 000000       ncrt0
+                                 REL ROMDATA 00811A 000005       StackBlock
+                                 REL ROMDATA 00811F 000001       timer
+program                          REL CODE    008120 000000 2     ncrt0
+                                 REL CODE    008120 000455 2     control_power
+                                 REL CODE    008576 000121 2     init
+                                 REL CODE    008698 0002ED 2     serial
+                                 REL CODE    008986 0001D8 2     serial1
+                                 REL CODE    008B5E 000D41 2     StackBlock
+                                 REL CODE    0098A0 0001C1 2     timer
+                                 REL CODE    009A62 00009D 2     init
+                                 REL CODE    009B00 000104 2     device
+interrupt                        REL CODE    009C04 000000 2     ncrt0
+                                 REL CODE    009C04 0000A1       ncrt0
+vector                           ABS ROMDATA 00FEDC 000100       ncrt0
+fvector                          ABS ROMDATA 00FFDC 000024       ncrt0
+# Total -------------------------------------------------------------------
+                                     DATA           0004EA(0001258) Byte(s)
+                                     ROMDATA        000244(0000580) Byte(s)
+                                     CODE           001B85(0007045) Byte(s)
+
+##########################################
+# VARIABLE VECTOR TABLE INFORMATION      #
+##########################################
+No.  Address               No.  Address               No.  Address
+0    dummy_int             1    dummy_int             2    dummy_int             
+3    dummy_int             4    dummy_int             5    dummy_int             
+6    dummy_int             7    dummy_int             8    dummy_int             
+9    dummy_int             10   dummy_int             11   dummy_int             
+12   dummy_int             13   dummy_int             14   dummy_int             
+15   dummy_int             16   dummy_int             17   dummy_int             
+18   _UART0_rx_int         19   dummy_int             20   _UART1_rx_int         
+21   dummy_int             22   _TRA_int              23   dummy_int             
+24   dummy_int             25   dummy_int             26   dummy_int             
+27   dummy_int             28   dummy_int             29   dummy_int             
+30   dummy_int             31   dummy_int             32   dummy_int             
+33   dummy_int             34   dummy_int             35   dummy_int             
+36   dummy_int             37   dummy_int             38   dummy_int             
+39   dummy_int             40   dummy_int             41   dummy_int             
+42   dummy_int             43   dummy_int             44   dummy_int             
+45   dummy_int             46   dummy_int             47   dummy_int             
+48   dummy_int             49   dummy_int             50   dummy_int             
+51   dummy_int             52   dummy_int             53   dummy_int             
+54   dummy_int             55   dummy_int             56   dummy_int             
+57   dummy_int             58   dummy_int             59   dummy_int             
+60   dummy_int             61   dummy_int             62   dummy_int             
+63   dummy_int             
+
+##########################################
+# (3) GLOBAL LABEL INFORMATION           #
+##########################################
+$UART0_3tx         0086e6  $UART0_bin_data    008774  $UART0_tx          0086d0
+$UART0_tx_data     00871c  $UART0_tx_str      008700  $UART1_3tx         0089dc
+$UART1_tx          0089c6  $UART1_tx_data     008a12  $UART1_tx_str      0089f6
+$_pput             009bca  $_sput             009bb0  $bin2asc           0088d8
+$chrstr1           008b32  $data_send         0088fc  $exit              009ca2
+$init_dev          009b00  $multi_out         00831a  $receive_data      009834
+$receive_id        009024  $receive_req       008cb8  $recv_x            008506
+$recv_y            008250  $send_area         008d78  $send_block        0097ca
+$send_id           008f68  $send_position     009642  $send_position_x   0096f8
+$send_position_y   009754  $send_req          008db8  $send_req2         008e48
+$send_req3         008ed8  $send_x            008198  $send_y            008222
+$set_led           009398  $set_led_all       009532  $set_led_none      0095b2
+$set_led_stripe    009572  $shift_data1       00815c  $shift_data2       008170
+$shift_data3       008184  $speed             009b14  $switch_out        00845e
+$wait_2xusec       009884  _LED_count         000714  _RLED_on_delay     009a48
+_TRA_int           009a32  _UART0_rx          008796  _UART0_rx_int      0087e4
+_UART1_rx          008ab6  _UART1_rx_int      008a92  __init             009a62
+__iob              000718  __memt             000508  __mnext            000754
+__msize            000756  __pa_vct           000767  __pb_vct           000769
+__pool             000502  __porta            000766  __portb            000768
+__sget             009ba0  _active_x          000760  _active_y          000761
+_count0            0005a6  _count1            00063e  _counter2_z        000712
+_counter_z         000765  _data              000640  _data0             000554
+_data1             0005ee  _exit              009ca2  _fifo1_init        008986
+_fifo_init         008698  _flag_block        00075a  _flag_receive1     00075b
+_flag_receive3     00075d  _flag_surface      00075c  _get_ct            009a50
+_init_AD           00866e  _init_PORT         008576  _init_PWM          0098a0
+_init_flag         0099d4  _main              008b5e  _message_count     0005a4
+_message_flag      00075f  _receive           000498  _receive_work0     008826
+_receive_work1     008b04  _reception_down    000466  _reception_up      000402
+_recog             009276  _recog_all         009220  _recog_all_data    00929a
+_recog_data        0092f0  _req               000708  _rled_counter      000716
+_rque0             000514  _rque0_pw          000512  _rque0_r           00050e
+_rque0_w           000510  _rque1             0005ae  _rque1_pw          0005ac
+_rque1_r           0005a8  _rque1_w           0005aa  _rx_data           000764
+_send_block_base   009798  _send_node_base    00977a  _send_position_b   0095e6
+_send_surface1     009764  _send_x_down       0004fe  _send_x_up         0004fc
+_send_y_           000500  _set_AD            009198  _set_AD_all        0091ae
+_set_MainCLK       009986  _set_UART0         0086aa  _set_UART1         008994
+_set_center        0093da  _set_reset         0099a4  _shift3            000400
+_shift_rck1        00813e  _shift_rck2        008148  _shift_rck3        008152
+_shift_sck1        008120  _shift_sck2        00812a  _shift_sck3        008134
+_show_reception    00933e  _show_reception_   0092fe  _start_PWM         0098d6
+_start_measure_f   000763  _state             00075e  _sync_scan_flag    000762
+_timer_ra_init     0099e2  _wait_100usec      009940  _wait_1msec        00991c
+_wait_250msec      0098dc  _wait_2usec        009964  _wait_50msec       0098ec
+_wait_5msec        00990c  dummy_int          009ca4  start              009c04
+
+##########################################
+# (4) GLOBAL EQU SYMBOL INFORMATION      #
+##########################################
+__SB__           00000400  
+
+##########################################
+# (5) GLOBAL EQU BIT-SYMBOL INFORMATION  #
+##########################################
+
+##########################################
+# (6) LOCAL LABEL INFORMATION            #
+##########################################
+@ ncrt0 ( C:\WorkSpace\StackBlock\StackBlock\Debug\ncrt0.r30 )
+@ control_power ( C:\WorkSpace\StackBlock\StackBlock\Debug\control_power.r30 )
+@ init ( C:\WorkSpace\StackBlock\StackBlock\Debug\init.r30 )
+@ serial ( C:\WorkSpace\StackBlock\StackBlock\Debug\serial.r30 )
+@ serial1 ( C:\WorkSpace\StackBlock\StackBlock\Debug\serial1.r30 )
+@ StackBlock ( C:\WorkSpace\StackBlock\StackBlock\Debug\StackBlock.r30 )
+@ timer ( C:\WorkSpace\StackBlock\StackBlock\Debug\timer.r30 )
+@ init ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+@ device ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+
+##########################################
+# (7) LOCAL EQU SYMBOL INFORMATION       #
+##########################################
+@ ncrt0 ( C:\WorkSpace\StackBlock\StackBlock\Debug\ncrt0.r30 )
+@ control_power ( C:\WorkSpace\StackBlock\StackBlock\Debug\control_power.r30 )
+@ init ( C:\WorkSpace\StackBlock\StackBlock\Debug\init.r30 )
+@ serial ( C:\WorkSpace\StackBlock\StackBlock\Debug\serial.r30 )
+@ serial1 ( C:\WorkSpace\StackBlock\StackBlock\Debug\serial1.r30 )
+@ StackBlock ( C:\WorkSpace\StackBlock\StackBlock\Debug\StackBlock.r30 )
+@ timer ( C:\WorkSpace\StackBlock\StackBlock\Debug\timer.r30 )
+@ init ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+@ device ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+
+##########################################
+# (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
+##########################################
+@ ncrt0 ( C:\WorkSpace\StackBlock\StackBlock\Debug\ncrt0.r30 )
+@ control_power ( C:\WorkSpace\StackBlock\StackBlock\Debug\control_power.r30 )
+@ init ( C:\WorkSpace\StackBlock\StackBlock\Debug\init.r30 )
+@ serial ( C:\WorkSpace\StackBlock\StackBlock\Debug\serial.r30 )
+@ serial1 ( C:\WorkSpace\StackBlock\StackBlock\Debug\serial1.r30 )
+@ StackBlock ( C:\WorkSpace\StackBlock\StackBlock\Debug\StackBlock.r30 )
+@ timer ( C:\WorkSpace\StackBlock\StackBlock\Debug\timer.r30 )
+@ init ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+@ device ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\r8clib.lib )
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+data_SE
+                                  00000400  00000400         0   1
+bss_SE
+                                  00000400  00000400         0   2
+data_SO
+                                  00000400  00000400         0   1
+bss_SO
+                                  00000400  00000400         0   1
+data_NE
+                                  00000400  0000050d       10e   2
+bss_NE
+                                  0000050e  00000759       24c   2
+data_NO
+                                  0000075a  0000075f         6   1
+bss_NO
+                                  00000760  00000769         a   1
+istack
+                                  0000076a  000007e9        80   2
+stack
+                                  000007ea  00000869        80   2
+heap
+                                  0000086a  000008e9        80   1
+rom_NE
+                                  00008000  00008000         0   1
+rom_NO
+                                  00008000  0000800b         c   1
+data_SEI
+                                  0000800c  0000800c         0   2
+data_SOI
+                                  0000800c  0000800c         0   1
+data_NEI
+                                  0000800c  00008119       10e   2
+data_NOI
+                                  0000811a  0000811f         6   1
+program
+                                  00008120  00009c03      1ae4   2
+interrupt
+                                  00009c04  00009ca4        a1   2
+vector
+                                  0000fedc  0000ffdb       100   1
+fvector
+                                  0000ffdc  0000ffff        24   1
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=data_SE
+FILE=ncrt0
+                                  00000400  00000400         0
+  __SB__
+                                  00000400         0   none ,g         0
+
+SECTION=data_NE
+FILE=C:/WorkSpace/StackBlock/StackBlock/control_power
+                                  00000400  00000401         2
+  _shift3
+                                  00000400         2   data ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/StackBlock
+                                  00000402  00000501       100
+  _reception_up
+                                  00000402        64   data ,g         0
+  _reception_down
+                                  00000466        32   data ,g         0
+  _receive
+                                  00000498        64   data ,g         0
+  _send_x_up
+                                  000004fc         2   data ,g         0
+  _send_x_down
+                                  000004fe         2   data ,g         0
+  _send_y_
+                                  00000500         2   data ,g         0
+
+FILE=mdata
+                                  00000502  0000050d         c
+  __memt
+                                  00000508         0   none ,g         0
+  __pool
+                                  00000502         0   none ,g         0
+
+SECTION=bss_NE
+FILE=C:/WorkSpace/StackBlock/StackBlock/serial
+                                  0000050e  000005a7        9a
+  _rque0_r
+                                  0000050e         2   data ,g         0
+  _rque0_w
+                                  00000510         2   data ,g         0
+  _rque0_pw
+                                  00000512         2   data ,g         0
+  _rque0
+                                  00000514        40   data ,g         0
+  _data0
+                                  00000554        50   data ,g         0
+  _message_count
+                                  000005a4         2   data ,g         0
+  _count0
+                                  000005a6         2   data ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/serial1
+                                  000005a8  0000063f        98
+  _rque1_r
+                                  000005a8         2   data ,g         0
+  _rque1_w
+                                  000005aa         2   data ,g         0
+  _rque1_pw
+                                  000005ac         2   data ,g         0
+  _rque1
+                                  000005ae        40   data ,g         0
+  _data1
+                                  000005ee        50   data ,g         0
+  _count1
+                                  0000063e         2   data ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/StackBlock
+                                  00000640  00000711        d2
+  _data
+                                  00000640        c8   data ,g         0
+  _req
+                                  00000708         a   data ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/timer
+                                  00000712  00000717         6
+  _counter2_z
+                                  00000712         2   data ,g         0
+  _LED_count
+                                  00000714         2   data ,g         0
+  _rled_counter
+                                  00000716         2   data ,g         0
+
+FILE=init
+                                  00000718  00000753        3c
+  __iob
+                                  00000718         0   none ,g         0
+
+FILE=mdata
+                                  00000754  00000759         6
+  __mnext
+                                  00000754         0   none ,g         0
+  __msize
+                                  00000756         0   none ,g         0
+
+SECTION=data_NO
+FILE=ncrt0
+                                  0000075a  0000075a         0
+  _flag_block
+                                  0000075a         1   data ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/StackBlock
+                                  0000075a  0000075e         5
+  _flag_receive1
+                                  0000075b         1   data ,g         0
+  _flag_surface
+                                  0000075c         1   data ,g         0
+  _flag_receive3
+                                  0000075d         1   data ,g         0
+  _state
+                                  0000075e         1   data ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/timer
+                                  0000075f  0000075f         1
+  _message_flag
+                                  0000075f         1   data ,g         0
+
+SECTION=bss_NO
+FILE=ncrt0
+                                  00000760  00000760         0
+  _active_x
+                                  00000760         1   data ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/StackBlock
+                                  00000760  00000761         2
+  _active_y
+                                  00000761         1   data ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/timer
+                                  00000762  00000765         4
+  _sync_scan_flag
+                                  00000762         1   data ,g         0
+  _start_measure_flag
+                                  00000763         1   data ,g         0
+  _rx_data
+                                  00000764         1   data ,g         0
+  _rx_data
+                                  00000764         1   data ,g         0
+  _counter_z
+                                  00000765         1   data ,g         0
+
+FILE=device
+                                  00000766  00000769         4
+  __pa_vct
+                                  00000767         0   none ,g         0
+  __pb_vct
+                                  00000769         0   none ,g         0
+  __porta
+                                  00000766         0   none ,g         0
+  __portb
+                                  00000768         0   none ,g         0
+
+SECTION=program
+FILE=C:/WorkSpace/StackBlock/StackBlock/control_power
+                                  00008120  00008574       455
+  _shift_sck1
+                                  00008120         9   func ,g         0
+  _shift_sck2
+                                  0000812a         a   func ,g         0
+  _shift_sck3
+                                  00008134         a   func ,g         0
+  _shift_rck1
+                                  0000813e         a   func ,g         0
+  _shift_rck2
+                                  00008148         a   func ,g         0
+  _shift_rck3
+                                  00008152         a   func ,g         0
+  $shift_data1
+                                  0000815c        14   func ,g         0
+  $shift_data2
+                                  00008170        14   func ,g         0
+  $shift_data3
+                                  00008184        14   func ,g         0
+  $send_x
+                                  00008198        8a   func ,g         0
+  $send_y
+                                  00008222        2f   func ,g         0
+  $recv_y
+                                  00008250        ca   func ,g         0
+  $multi_out
+                                  0000831a       143   func ,g         0
+  $switch_out
+                                  0000845e        a8   func ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/init
+                                  00008576  00008696       121
+  _init_PORT
+                                  00008576        f8   func ,g         0
+  _init_AD
+                                  0000866e        29   func ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/serial
+                                  00008698  00008984       2ed
+  _fifo_init
+                                  00008698        11   func ,g         0
+  _set_UART0
+                                  000086aa        26   func ,g         0
+  $UART0_tx
+                                  000086d0        16   func ,g         0
+  $UART0_3tx
+                                  000086e6        1b   func ,g         0
+  $UART0_tx_str
+                                  00008700        1c   func ,g         0
+  $UART0_tx_data
+                                  0000871c        58   func ,g         0
+  $UART0_bin_data
+                                  00008774        22   func ,g         0
+  _UART0_rx
+                                  00008796        4e   func ,g         0
+  _UART0_rx_int
+                                  000087e4        42   func ,g         0
+  _receive_work0
+                                  00008826        b1   func ,g         0
+  $bin2asc
+                                  000088d8        24   func ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/serial1
+                                  00008986  00008b5d       1d8
+  _fifo1_init
+                                  00008986         d   func ,g         0
+  _set_UART1
+                                  00008994        32   func ,g         0
+  $UART1_tx
+                                  000089c6        16   func ,g         0
+  $UART1_3tx
+                                  000089dc        1b   func ,g         0
+  $UART1_tx_str
+                                  000089f6        1c   func ,g         0
+  $UART1_tx_data
+                                  00008a12        80   func ,g         0
+  _UART1_rx_int
+                                  00008a92        23   func ,g         0
+  _UART1_rx
+                                  00008ab6        4f   func ,g         0
+  _receive_work1
+                                  00008b04        2e   func ,g         0
+  $chrstr1
+                                  00008b32        2c   func ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/StackBlock
+                                  00008b5e  0000989e       d41
+  _main
+                                  00008b5e       159   func ,g         0
+  $receive_req
+                                  00008cb8        c1   func ,g         0
+  $send_area
+                                  00008d78        3f   func ,g         0
+  $send_req
+                                  00008db8        90   func ,g         0
+  $send_req2
+                                  00008e48        90   func ,g         0
+  $send_req3
+                                  00008ed8        90   func ,g         0
+  $send_id
+                                  00008f68        bc   func ,g         0
+  $receive_id
+                                  00009024       174   func ,g         0
+  _set_AD
+                                  00009198        16   func ,g         0
+  _set_AD_all
+                                  000091ae        72   func ,g         0
+  _recog_all
+                                  00009220        57   func ,g         0
+  _recog
+                                  00009276        23   func ,g         0
+  _recog_all_data
+                                  0000929a        56   func ,g         0
+  _recog_data
+                                  000092f0         e   func ,g         0
+  _show_reception_data
+                                  000092fe        40   func ,g         0
+  _show_reception
+                                  0000933e        5b   func ,g         0
+  $set_led
+                                  00009398        41   func ,g         0
+  _set_center
+                                  000093da       159   func ,g         0
+  $set_led_all
+                                  00009532        3f   func ,g         0
+  $set_led_stripe
+                                  00009572        40   func ,g         0
+  $set_led_none
+                                  000095b2        34   func ,g         0
+  _send_position_base
+                                  000095e6        5d   func ,g         0
+  $send_position
+                                  00009642        b6   func ,g         0
+  $send_position_x
+                                  000096f8        5c   func ,g         0
+  $send_position_y
+                                  00009754        10   func ,g         0
+  _send_surface1
+                                  00009764        16   func ,g         0
+  _send_node_base
+                                  0000977a        1e   func ,g         0
+  _send_block_base
+                                  00009798        31   func ,g         0
+  $send_block
+                                  000097ca        6b   func ,g         0
+  $receive_data
+                                  00009834        4f   func ,g         0
+
+FILE=C:/WorkSpace/StackBlock/StackBlock/timer
+                                  000098a0  00009a60       1c1
+  _init_PWM
+                                  000098a0        35   func ,g         0
+  _start_PWM
+                                  000098d6         6   func ,g         0
+  _wait_250msec
+                                  000098dc        11   func ,g         0
+  _wait_50msec
+                                  000098ec        1f   func ,g         0
+  _wait_5msec
+                                  0000990c        11   func ,g         0
+  _wait_1msec
+                                  0000991c        23   func ,g         0
+  _wait_100usec
+                                  00009940        24   func ,g         0
+  _wait_2usec
+                                  00009964        22   func ,g         0
+  _set_MainCLK
+                                  00009986        1e   func ,g         0
+  _set_reset
+                                  000099a4        31   func ,g         0
+  _init_flag
+                                  000099d4         d   func ,g         0
+  _timer_ra_init
+                                  000099e2        50   func ,g         0
+  _TRA_int
+                                  00009a32        16   func ,g         0
+  _RLED_on_delay
+                                  00009a48         8   func ,g         0
+
+FILE=init
+                                  00009a62  00009afe        9d
+  __init
+                                  00009a62        9d   func ,g         0
+
+FILE=device
+                                  00009b00  00009c03       104
+  $init_dev
+                                  00009b00        13   func ,g         0
+  $speed
+                                  00009b14        8d   func ,g         0
+  __sget
+                                  00009ba0         f   func ,g         0
+  $_sput
+                                  00009bb0        1b   func ,g         0
+  $_pput
+                                  00009bca        3a   func ,g         0
+
+SECTION=interrupt
+FILE=ncrt0
+                                  00009c04  00009ca4        a1
+  $exit
+                                  00009ca2         0   none ,g         0
+  _exit
+                                  00009ca2         0   none ,g         0
+  dummy_int
+                                  00009ca4         0   none ,g         0
+

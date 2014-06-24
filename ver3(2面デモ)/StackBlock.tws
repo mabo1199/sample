@@ -1,0 +1,25 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"StackBlock" 
+[GENERAL_DATA]
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\control_power.c" 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\init.c" 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\serial1.c" 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\StackBlock.c" 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\StackBlock.h" 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\timer.c" 
+[WORKSPACE_FILE_STATES]
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\StackBlock.c" -8 -30 1724 771 1 1 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\StackBlock.h" 125 125 1483 508 0 5 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\control_power.c" 0 0 1239 514 0 0 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\init.c" 75 75 1483 508 0 3 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\serial1.c" 100 100 1483 508 0 4 
+"C:\Users\ando\Dropbox\StackBlock\program\ver3(2面デモ)\StackBlock\timer.c" 50 50 1483 508 0 2 
+[LOADED_PROJECTS]
+"StackBlock" 
+[END]

@@ -1,0 +1,12 @@
+-L "r8clib"
+-G
+-MS
+-O "C:\WorkSpace\StackBlock\StackBlock\Debug\StackBlock.x30"
+-R8C
+"C:\WorkSpace\StackBlock\StackBlock\Debug\ncrt0.r30"
+"C:\WorkSpace\StackBlock\StackBlock\Debug\control_power.r30"
+"C:\WorkSpace\StackBlock\StackBlock\Debug\init.r30"
+"C:\WorkSpace\StackBlock\StackBlock\Debug\serial.r30"
+"C:\WorkSpace\StackBlock\StackBlock\Debug\serial1.r30"
+"C:\WorkSpace\StackBlock\StackBlock\Debug\StackBlock.r30"
+"C:\WorkSpace\StackBlock\StackBlock\Debug\timer.r30"
